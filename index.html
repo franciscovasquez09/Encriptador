@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Sistema Encriptador de Palabras</h2>
+        <div class="main-content">
+            <div class="input-section">
+                <label for="inputText">Ingrese el texto aqui:</label>
+                <textarea id="inputText" placeholder="Escribe aqui el texto que deseas encriptar o desencriptar"></textarea>
+                <div class="buttons">
+                    <button onclick="encriptar()">Encriptar</button>
+                    <button onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="output-section">
+                <label for="outputText">Resultado:</label>
+                <textarea id="outputText" readonly></textarea>
+                <img src="interrogacion.jpeg">
+                <button onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="encriptador.js"></script>
+</body>
+</html>
+
+
